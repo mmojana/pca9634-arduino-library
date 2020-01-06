@@ -1,0 +1,33 @@
+# Datatypes (KEYWORD1)
+
+Pca9634	KEYWORD1
+OutputChangeTrigger	KEYWORD1
+OutputDriverStructure	KEYWORD1
+OutputWhenNotEnabled	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+
+begin	KEYWORD2
+reset	KEYWORD2
+sleep	KEYWORD2
+wakeup	KEYWORD2
+setSubaddress1Active	KEYWORD2
+setSubaddress2Active	KEYWORD2
+setSubaddress3Active	KEYWORD2
+setAllCallAddressActive	KEYWORD2
+setAllCallAddressInactive	KEYWORD2
+configureOutputs	KEYWORD2
+configureDimmingEffect	KEYWORD2
+configureBlinkingEffect	KEYWORD2
+setBrightness	KEYWORD2
+setEffectEnabled	KEYWORD2
+
+# Constants (LITERAL1)
+
+STOP_COMMAND	LITERAL1
+ACK	LITERAL1
+OPEN_DRAIN	LITERAL1
+TOTEM_POLE	LITERAL1
+ZERO	LITERAL1
+ONE_OR_WEAK_HIGH	LITERAL1
+HIGH_Z	LITERAL1
