@@ -126,7 +126,7 @@ void Pca9634::setAllCallAddressInactive() {
 
 void Pca9634::setAddressActive(const uint8_t index, const uint8_t addr, boolean enabled) {
 	if(enabled) {
-		writeRegister(REG_SUBADR1 + index, addr & 0xFE);
+		writeRegister(REG_SUBADR1 + index, (addr << 1) & 0xFF);
 	}
 	uint8_t oldMode1 = readRegister(REG_MODE1);
 	uint8_t enableBit = 0x08 >> index;
@@ -219,9 +219,6 @@ void Pca9634::setBrightness(const uint8_t channel, const uint16_t value) {
 	} else {
 		newLedoutValue = BRIGHTNESS_CONTROL;
 	}
-	char debug[256];
-	sprintf(debug, "addr=%02X shift=%d reg=%02X value=%d clamped=%d old=%d new=%d", ledoutRegisterAddress, ledoutBitShift, ledoutRegisterValue, value, clampedValue, oldLedoutValue, newLedoutValue);
-	Serial.println(debug);
 	if(newLedoutValue != oldLedoutValue) {
 		writeRegister(ledoutRegisterAddress, ledoutRegisterValue & ~(0x03 << ledoutBitShift) | (newLedoutValue << ledoutBitShift));
 	}

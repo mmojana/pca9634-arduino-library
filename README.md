@@ -21,10 +21,10 @@ The PCA9634 can use a number of addresses both to avoid conflicts and to create 
 |Address name     |I2C address          | Active at power-on/reset? | Can it be enabled/disabled? | Can it be changed? |
 |-----------------|---------------------|---------------------------|-----------------------------|--------------------|
 |Hardware address |\<A7-A0 selectable\> | Yes                       | No                          | No                 |
-|All call         |0xE0                 | Yes                       | Yes                         | Yes                |
-|Subaddress1      |0xE1                 | No                        | Yes                         | Yes                |
-|Subaddress2      |0xE2                 | No                        | Yes                         | Yes                |
-|Subaddress3      |0xE4                 | No                        | Yes                         | Yes                |
+|All call         |0x70                 | Yes                       | Yes                         | Yes                |
+|Subaddress1      |0x71                 | No                        | Yes                         | Yes                |
+|Subaddress2      |0x72                 | No                        | Yes                         | Yes                |
+|Subaddress3      |0x74                 | No                        | Yes                         | Yes                |
 
 
 The "All call" address is enabled at startup, can be changed with the method `setAllCallAddressActive(addr)` and disabled with `setAllCallAddressInactive()`.
