@@ -4,7 +4,7 @@
 
 There are two ways to install this library:
 1. Using the Arduino IDE Library Manager (Sketch > Include Library > Manage Libraries), search for "PCA9634 library". From the result list, select this library and click "Install".
-2. Checkout this repository in your `~/Arduino/library/` folder. When using the Arduino IDE, you should be able to find this library under Sketch > Include Library > PCA9634 library.
+2. Checkout this repository in your `~/Arduino/libraries/` folder. When using the Arduino IDE, you should be able to find this library under Sketch > Include Library > PCA9634 library.
 
 ## Usage
 
@@ -18,7 +18,7 @@ When designing a schematic with multiple ICs connected to the same I2C bus, you 
 
 The PCA9634 can use a number of addresses both to avoid conflicts and to create groups of receivers.
 
-|Address name     |I2C address          | Active at power-on/reset? | Can it be enabled/disabled? | Can it be changed? |
+|Address name     |I2C address          | Active at power-on/reset? | Can it be enabled/disabled? | Can it be changed in software? |
 |-----------------|---------------------|---------------------------|-----------------------------|--------------------|
 |Hardware address |\<A7-A0 selectable\> | Yes                       | No                          | No                 |
 |All call         |0x70                 | Yes                       | Yes                         | Yes                |
