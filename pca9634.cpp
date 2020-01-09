@@ -10,7 +10,7 @@ typedef enum {
 
 const uint8_t CHANNELS = 8;
 
-const uint8_t DEFAULT_ALL_CALL_I2C_SLAVE_ADDRESS = 0xE0;
+const uint8_t DEFAULT_ALL_CALL_I2C_SLAVE_ADDRESS = 0x70;
 const uint8_t DEFAULT_SWRST_I2C_SLAVE_ADDRESS    = 0x03;
 
 const uint8_t REG_MODE1   = 0x00;
